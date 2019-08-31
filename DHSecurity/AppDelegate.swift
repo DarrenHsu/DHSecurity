@@ -16,6 +16,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        #if !(arch(i386) || arch(x86_64))
+        if UIApplication.isJailbreak() {
+            print("is jb")
+        }else {
+            print("not jb")
+        }
+        #endif
+        
         return true
     }
 
