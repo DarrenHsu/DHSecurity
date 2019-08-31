@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  DHSecurity
 //
-//  Created by wen on 2019/8/31.
+//  Created by Darren Hsu on 2019/8/31.
 //  Copyright © 2019 DHProject. All rights reserved.
 //
 
@@ -17,13 +17,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
-        #if !(arch(i386) || arch(x86_64))
-        if UIApplication.isJailbreak() {
+//        #if !(arch(i386) || arch(x86_64))
+        if self.isJailbreak() {
             print("is jb")
         }else {
             print("not jb")
         }
-        #endif
+//        #endif
         
         return true
     }

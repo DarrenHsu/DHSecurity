@@ -2,14 +2,14 @@
 //  UIAppDelegate+Jailbreak.swift
 //  DHAssesmentCollection
 //
-//  Created by wen on 2019/8/31.
+//  Created by Darren Hsu on 2019/8/31.
 //  Copyright © 2019 D.H. All rights reserved.
 //
 
 import UIKit
 
-extension UIApplication {
-    public static func isJailbreak() -> Bool {
+extension UIApplicationDelegate {
+    public func isJailbreak() -> Bool {
         guard let cydiaUrlScheme = NSURL(string: "cydia://package/com.example.package") else { return false }
         if UIApplication.shared.canOpenURL(cydiaUrlScheme as URL) {
             return true
@@ -73,7 +73,7 @@ extension UIApplication {
         return false
     }
     
-    private static func canOpen(path: String) -> Bool {
+    private func canOpen(path: String) -> Bool {
         let file = fopen(path, "r")
         guard file != nil else { return false }
         fclose(file)

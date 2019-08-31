@@ -14,7 +14,7 @@
 		A2DBF8E4231A81C000D2A8D8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2DBF8E2231A81C000D2A8D8 /* LaunchScreen.storyboard */; };
 		A2DBF8EF231A81C000D2A8D8 /* DHSecurityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2DBF8EE231A81C000D2A8D8 /* DHSecurityTests.swift */; };
 		A2DBF8FA231A81C100D2A8D8 /* DHSecurityUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2DBF8F9231A81C100D2A8D8 /* DHSecurityUITests.swift */; };
-		A2DBF90A231A827900D2A8D8 /* UIApplication+Jailbreak.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2DBF909231A827900D2A8D8 /* UIApplication+Jailbreak.swift */; };
+		A2DBF90A231A827900D2A8D8 /* UIApplicationDelegate+Jailbreak.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2DBF909231A827900D2A8D8 /* UIApplicationDelegate+Jailbreak.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,7 +48,7 @@
 		A2DBF8F5231A81C100D2A8D8 /* DHSecurityUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DHSecurityUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2DBF8F9231A81C100D2A8D8 /* DHSecurityUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DHSecurityUITests.swift; sourceTree = "<group>"; };
 		A2DBF8FB231A81C100D2A8D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A2DBF909231A827900D2A8D8 /* UIApplication+Jailbreak.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIApplication+Jailbreak.swift"; sourceTree = "<group>"; };
+		A2DBF909231A827900D2A8D8 /* UIApplicationDelegate+Jailbreak.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIApplicationDelegate+Jailbreak.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,7 +139,7 @@
 		A2DBF908231A827900D2A8D8 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
-				A2DBF909231A827900D2A8D8 /* UIApplication+Jailbreak.swift */,
+				A2DBF909231A827900D2A8D8 /* UIApplicationDelegate+Jailbreak.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -277,7 +277,7 @@
 			files = (
 				A2DBF8DC231A81BE00D2A8D8 /* ViewController.swift in Sources */,
 				A2DBF8DA231A81BE00D2A8D8 /* AppDelegate.swift in Sources */,
-				A2DBF90A231A827900D2A8D8 /* UIApplication+Jailbreak.swift in Sources */,
+				A2DBF90A231A827900D2A8D8 /* UIApplicationDelegate+Jailbreak.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
