@@ -8,6 +8,10 @@
 
 import UIKit
 
+/*
+ Jailbreak Detection (MSTG-RESILIENCE-1)
+ https://github.com/OWASP/owasp-mstg/blob/master/Document/0x06j-Testing-Resiliency-Against-Reverse-Engineering.md#ios-anti-reversing-defenses
+*/
 extension UIApplicationDelegate {
     public func isJailbreak() -> Bool {
         guard let cydiaUrlScheme = NSURL(string: "cydia://package/com.example.package") else { return false }
